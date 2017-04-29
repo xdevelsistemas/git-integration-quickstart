@@ -37,5 +37,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "validate-commit-msg": "^2.12.1"
   }
 }
