@@ -1,0 +1,45 @@
+{
+  "name": "git_p1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "conventional-changelog-lint --from=HEAD~1",
+    "commitmsg": "conventional-changelog-lint -e"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "conventional-changelog-lint": "^1.1.9",
+    "cz-conventional-changelog": "^2.0.0",
+    "husky": "^0.13.3"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "ci",
+        "build"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": ""
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "validate-commit-msg": "^2.12.1"
+  }
+}
