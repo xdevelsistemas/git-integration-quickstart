@@ -7,7 +7,7 @@ yarn global add commitizen rimraf conventional-recommended-bump conventional-cha
 
 commitizen init cz-conventional-changelog --save-dev --save-exact
 
-yarn add --dev husky conventional-changelog
+yarn add --dev husky conventional-changelog conventional-changelog-lint
 ```
 
 Editar o package.json:
@@ -46,4 +46,5 @@ na raiz do package.json colocar o conteúdo:
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+ }
 ```
