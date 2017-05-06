@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "conventional-changelog-lint --from=HEAD~1",
-    "commitmsg": "conventional-changelog-lint -e"
+    "commitmsg": "validate-commit-msg"
   },
   "author": "",
   "license": "ISC",
