@@ -21,7 +21,8 @@
 # defaults to conventional-commits-detector
 #
 # For release setup token authentication (https://github.com/conventional-changelog/conventional-github-releaser)
-
+echo "enviando conteudo em staging para o repositório"
+git push &&
 echo "Apagando node_modules" &&
 rimraf node_modules &&
 echo "git pull --rebase" &&
