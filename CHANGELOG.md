@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.2.3...v1.3.0) (2017-05-06)
+
+
+### Features
+
+* **teste:** ajuste no teste ([fdf9f19](https://github.com/claytonsilva/git-integration-quickstart/commit/fdf9f19))
+
+
+
 <a name="1.2.3"></a>
 ## [1.2.3](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.2.2...v1.2.3) (2017-05-06)
 
