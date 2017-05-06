@@ -1,3 +1,13 @@
+<a name="1.3.1"></a>
+## [1.3.1](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.3.0...v1.3.1) (2017-05-06)
+
+
+### Bug Fixes
+
+* **teste:** removido linha desnecessária ([056f4df](https://github.com/claytonsilva/git-integration-quickstart/commit/056f4df))
+
+
+
 <a name="1.3.0"></a>
 # [1.3.0](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.2.3...v1.3.0) (2017-05-06)
 
