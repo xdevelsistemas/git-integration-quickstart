@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "conventional-changelog-lint --from=HEAD~1",
-    "commitmsg": "conventional-changelog-lint -e"
+    "commitmsg": "validate-commit-msg"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "conventional-changelog-lint": "^1.1.9",
     "cz-conventional-changelog": "^2.0.0",
-    "husky": "^0.13.3"
+    "husky": "^0.13.3",
+    "validate-commit-msg": "^2.12.1"
   },
   "config": {
     "validate-commit-msg": {
@@ -39,7 +40,5 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {
-    "validate-commit-msg": "^2.12.1"
-  }
+  "dependencies": {}
 }
