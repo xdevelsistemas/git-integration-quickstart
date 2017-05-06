@@ -21,6 +21,8 @@
 # defaults to conventional-commits-detector
 #
 # For release setup token authentication (https://github.com/conventional-changelog/conventional-github-releaser)
+echo "entrando no branch develop"
+git checkout develop 
 echo "enviando conteudo em staging para o repositório"
 git push &&
 echo "Apagando node_modules" &&
@@ -44,5 +46,7 @@ echo ${3:-$version} &&
 git commit -m"docs(CHANGELOG): $version" &&
 mv -f _package.json package.json &&
 npm version ${1:-$bump} -m "chore(release): %s" &&
-git push --follow-tags &&
-conventional-github-releaser -p ${2:-$preset}
+conventional-github-releaser -p ${2:-$preset} &&
+git checkout master &&
+git merge develop &&
+git push origin develop master --follow-tags
