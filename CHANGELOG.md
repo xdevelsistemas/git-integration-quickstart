@@ -1,3 +1,14 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.1.1...v1.2.0) (2017-05-06)
+
+
+### Features
+
+* **arquivo:** adicionado conteudo ([f8790f5](https://github.com/claytonsilva/git-integration-quickstart/commit/f8790f5))
+* **teste:** adicionado texto no teste ([b95873d](https://github.com/claytonsilva/git-integration-quickstart/commit/b95873d))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.1.0...v1.1.1) (2017-05-06)
 
