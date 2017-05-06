@@ -15,7 +15,7 @@ Editar o package.json:
 ```json
  {
     "scripts": {
-      "commitmsg": "conventional-changelog-lint -e"
+      "commitmsg": "validate-commit-msg"
     }
   }
 ```
