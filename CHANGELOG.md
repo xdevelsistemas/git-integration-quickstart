@@ -1,3 +1,8 @@
+<a name="1.3.2"></a>
+## [1.3.2](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.3.1...v1.3.2) (2017-05-06)
+
+
+
 <a name="1.3.1"></a>
 ## [1.3.1](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.3.0...v1.3.1) (2017-05-06)
 
