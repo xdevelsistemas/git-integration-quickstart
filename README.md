@@ -7,7 +7,7 @@ yarn global add commitizen rimraf conventional-recommended-bump conventional-cha
 
 commitizen init cz-conventional-changelog --save-dev --save-exact
 
-yarn add --dev husky conventional-changelog conventional-changelog-lint
+yarn add --dev husky conventional-changelog validate-commit-msg
 ```
 
 Editar o package.json:
@@ -15,7 +15,7 @@ Editar o package.json:
 ```json
  {
     "scripts": {
-      "commitmsg": "conventional-changelog-lint -e"
+      "commitmsg": "validate-commit-msg"
     }
   }
 ```
