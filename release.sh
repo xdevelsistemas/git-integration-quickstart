@@ -45,12 +45,12 @@ version=$(json -f package.json version) &&
 echo ${3:-$version} &&
 git commit -m"docs(CHANGELOG): $version" &&
 git flow release start $version
-mv -f _package.json package.json &&
-npm version ${1:-$bump} -m "chore(release): %s" &&
-conventional-github-releaser -p ${2:-$preset} &&
-git checkout develop && 
-git rebase --no-ff release/$version &&
-git checkout master &&
-git rebase --no-ff release/$version &&
-git push origin develop master --follow-tags
-git checkout develop
+# mv -f _package.json package.json &&
+# npm version ${1:-$bump} -m "chore(release): %s" &&
+# conventional-github-releaser -p ${2:-$preset} &&
+# git checkout develop && 
+# git rebase --no-ff release/$version &&
+# git checkout master &&
+# git rebase --no-ff release/$version &&
+# git push origin develop master --follow-tags
+# git checkout develop
