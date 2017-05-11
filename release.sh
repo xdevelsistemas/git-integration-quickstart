@@ -39,7 +39,6 @@ echo ${2:-$preset} &&
 bump=$(conventional-recommended-bump -p ${2:-$preset}) &&
 echo ${1:-$bump} &&
 echo 'teste de nome de versao' &&
-echo ${1:-$bump} &&
 npm --no-git-tag-version version ${1:-$bump} &&
 conventional-changelog -i CHANGELOG.md -s -p ${2:-$preset} &&
 git add CHANGELOG.md &&
