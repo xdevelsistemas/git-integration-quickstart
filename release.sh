@@ -49,8 +49,8 @@ git flow release start $version
 npm version ${1:-$bump} -m "chore(release): %s" &&
 conventional-github-releaser -p ${2:-$preset} &&
 git checkout develop && 
-git rebase --no-ff release/$version &&
+git merge --no-ff release/$version &&
 git checkout master &&
-git rebase --no-ff release/$version &&
+git merge --no-ff release/$version &&
 git push origin develop master --follow-tags
 git checkout develop
