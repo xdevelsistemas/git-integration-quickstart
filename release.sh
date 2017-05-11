@@ -54,3 +54,4 @@ git checkout master &&
 git merge --no-ff release/$version &&
 git push origin develop master --follow-tags
 git checkout develop
+git branch -D release/$version
