@@ -38,11 +38,11 @@ preset=$(conventional-commits-detector) &&
 echo ${2:-$preset} &&
 bump=$(conventional-recommended-bump -p ${2:-$preset}) &&
 echo ${1:-$bump} &&
-echo 'teste de nome de versao' &&
 npm --no-git-tag-version version ${1:-$bump} &&
 conventional-changelog -i CHANGELOG.md -s -p ${2:-$preset} &&
 git add CHANGELOG.md &&
 version=$(json -f package.json version) &&
+echo 'teste de nome de versao' &&
 echo ${3:-$version} &&
 git commit -m"docs(CHANGELOG): $version" &&
 mv -f _package.json package.json &&
@@ -51,3 +51,4 @@ conventional-github-releaser -p ${2:-$preset} &&
 git checkout master &&
 git merge develop &&
 git push origin develop master --follow-tags
+git checkout develop
