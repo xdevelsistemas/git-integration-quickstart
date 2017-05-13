@@ -1,3 +1,12 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="1.3.22"></a>
+## [1.3.22](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.3.21...v1.3.22) (2017-05-13)
+
+
+
 <a name="1.3.21"></a>
 ## [1.3.21](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.3.20...v1.3.21) (2017-05-13)
 
@@ -149,6 +158,3 @@
 * **config:** teste ([11be3b9](https://github.com/claytonsilva/git-integration-quickstart/commit/11be3b9))
 * **config:** teste ([b336b38](https://github.com/claytonsilva/git-integration-quickstart/commit/b336b38))
 * **main:** adicionado itens do curso ([eb5102c](https://github.com/claytonsilva/git-integration-quickstart/commit/eb5102c))
-
-
-
