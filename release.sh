@@ -1,11 +1,11 @@
-# Create release script
+# Script para criacao de releases 
 #
-# prerequisites:
+# pre-requisitos:
 # `yarn install -g rimraf conventional-recommended-bump conventional-changelog-cli conventional-github-releaser conventional-commits-detector json`
-#
-# `np` with optional argument `patch`/`minor`/`major`/`<version>`
-# defaults to conventional-recommended-bump
-# and optional argument preset `angular`/ `jquery` ...
+#  voce sobrescrever a detecção do tipo de release executando o segundo argumento opcional
+#  sh release.sh `patch`/`minor`/`major`/`<version>`
+# por padrão ele utililiza o conventional-recommended-bump
+# uma segunda opção é escolher o preset (metodo de deteção de mudança de versão) `angular`/ `jquery` ...
 # defaults to conventional-commits-detector
 #
 # For release setup token authentication (https://github.com/conventional-changelog/conventional-github-releaser)
