@@ -68,6 +68,7 @@ function prerelease {
 	oldVersion=$(json -f package.json version) 
 	version=$(semver ${oldVersion}  --no-git-tag-version -i ${2:-$bump} --preid rc)
 	echo 'testando versao nova com prerelease'
+	echo ${2:-$bump}
 	semver ${oldVersion}  --no-git-tag-version -i ${2:-$bump} --preid rc
 	echo 'testando versao nova com prerelease'
 	npm --no-git-tag-version version ${version} 
