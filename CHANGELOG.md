@@ -1,3 +1,8 @@
+<a name="1.7.11-rc.2"></a>
+## [1.7.11-rc.2](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.11-rc.1...v1.7.11-rc.2) (2017-05-15)
+
+
+
 <a name="1.7.11-rc.1"></a>
 ## [1.7.11-rc.1](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.11-rc.0...v1.7.11-rc.1) (2017-05-15)
 
