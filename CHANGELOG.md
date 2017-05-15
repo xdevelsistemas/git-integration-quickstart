@@ -1,3 +1,13 @@
+<a name="1.8.0-rc.0"></a>
+# [1.8.0-rc.0](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.11...v1.8.0-rc.0) (2017-05-15)
+
+
+### Features
+
+* **release.sh:** teste de versao ([165c821](https://github.com/claytonsilva/git-integration-quickstart/commit/165c821))
+
+
+
 <a name="1.7.11"></a>
 ## [1.7.11](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.11-rc.2...v1.7.11) (2017-05-15)
 
