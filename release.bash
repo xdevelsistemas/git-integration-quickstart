@@ -71,7 +71,7 @@ function prerelease {
 	# caso não tenha nada informado no bump, será usado prerelease
 	version=$(semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc)
 	echo 'testando versao nova com prerelease'
-	echo ${2:-$bump}
+	echo pre${2:-$bump:-'release'}
 	semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc
 	echo ${version}
 	echo 'testando versao nova com prerelease'
