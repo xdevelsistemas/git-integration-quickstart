@@ -67,7 +67,9 @@ function release {
 function prerelease {
 	oldVersion=$(json -f package.json version) 
 	version=$(semver ${oldVersion}  --no-git-tag-version -i ${2:-$bump} --preid rc)
+	echo 'testando versao nova com prerelease'
 	echo $version
+	echo 'testando versao nova com prerelease'
 	npm --no-git-tag-version version ${version} 
 	conventional-changelog -i CHANGELOG.md -s -p ${3:-$preset} 
 	git add CHANGELOG.md 
