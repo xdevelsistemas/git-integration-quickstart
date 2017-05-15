@@ -73,11 +73,6 @@ function prerelease {
 		bump='release'
 	fi
 	version=$(semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump} --preid rc)
-	echo 'testando versao nova com prerelease'
-	echo pre${2:-$bump}
-	semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump} --preid rc
-	echo ${version}
-	echo 'testando versao nova com prerelease'
 	npm --no-git-tag-version version ${version} 
 	conventional-changelog -i CHANGELOG.md -s -p ${3:-$preset} 
 	git add CHANGELOG.md 
