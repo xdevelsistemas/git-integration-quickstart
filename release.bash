@@ -12,7 +12,7 @@
 #	 - bash release.bash prerelease
 #
 #  voce pode sobrescrever a detecção do tipo de release executando o segundo e terceiro argumento opcional
-#  bash release.bash release/prerelease `patch`/`minor`/`major`/`<version>` <preset>
+#  bash release.bash release/prerelease `patch`/`minor`/`major` <preset>
 #  por padrão ele utililiza o conventional-recommended-bump
 #  o preset (metodo de deteção de mudança de versão) pode ser `angular`/ `jquery` ...
 #  o padrão é conventional-commits-detector
@@ -65,11 +65,15 @@ function release {
 }
 
 function prerelease {
-	oldVersion=$(json -f package.json version) 
-	version=$(semver ${oldVersion}  --no-git-tag-version -i ${2:-$bump} --preid rc)
+	oldVersion=$(json -f package.json version)
+	# toda versao pre-release sera uma previa do que está querendo atingir com as alteracoes, entao tera prefixo pre no $bump
+	# logo um $bump que for recomendado pra ser uma minor será preminor e assim por diante.
+	# caso não tenha nada informado no bump, será usado prerelease
+	version=$(semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc)
 	echo 'testando versao nova com prerelease'
 	echo ${2:-$bump}
-	semver ${oldVersion}  --no-git-tag-version -i ${2:-$bump} --preid rc
+	semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc
+	echo ${version}
 	echo 'testando versao nova com prerelease'
 	npm --no-git-tag-version version ${version} 
 	conventional-changelog -i CHANGELOG.md -s -p ${3:-$preset} 
