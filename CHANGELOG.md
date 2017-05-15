@@ -1,3 +1,8 @@
+<a name="1.7.4"></a>
+## [1.7.4](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.3...v1.7.4) (2017-05-15)
+
+
+
 <a name="1.7.3"></a>
 ## [1.7.3](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.2...v1.7.3) (2017-05-15)
 
