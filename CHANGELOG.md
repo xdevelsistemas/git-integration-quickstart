@@ -1,3 +1,8 @@
+<a name="1.8.0-rc.1"></a>
+# [1.8.0-rc.1](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.8.0-rc.0...v1.8.0-rc.1) (2017-05-15)
+
+
+
 <a name="1.8.0-rc.0"></a>
 # [1.8.0-rc.0](https://github.com/claytonsilva/git-integration-quickstart/compare/v1.7.11...v1.8.0-rc.0) (2017-05-15)
 
