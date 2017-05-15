@@ -68,11 +68,10 @@ function prerelease {
 	oldVersion=$(json -f package.json version)
 	# toda versao pre-release sera uma previa do que está querendo atingir com as alteracoes, entao tera prefixo pre no $bump
 	# logo um $bump que for recomendado pra ser uma minor será preminor e assim por diante.
-	# caso não tenha nada informado no bump, será usado prerelease
-	version=$(semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc)
+	version=$(semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump} --preid rc)
 	echo 'testando versao nova com prerelease'
-	echo pre${2:-$bump:-'release'}
-	semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump:-'release'} --preid rc
+	echo pre${2:-$bump}
+	semver ${oldVersion}  --no-git-tag-version -i pre${2:-$bump} --preid rc
 	echo ${version}
 	echo 'testando versao nova com prerelease'
 	npm --no-git-tag-version version ${version} 
